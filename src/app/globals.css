@@ -222,16 +222,28 @@
     /*}*/
 }
 
-@media (max-width: 400px) {
+@media (max-width: 420px) {
     .timer {
         gap: 12px;
     }
     .timer__card-visual {
         position: relative;
-        width: 3.375rem;
-        height: 3.375rem;
+        width: 55px;
+        height: 55px;
     }
 }
+
+@media (min-width: 401px) and (max-width: 420px) {
+    .timer {
+        gap: 20px;
+    }
+    .timer__card-visual {
+        position: relative;
+        width: 60px;
+        height: 60px;
+    }
+}
+
 
 
 
