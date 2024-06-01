@@ -1,0 +1,220 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom {
+    cursor: pointer;
+    text-shadow: 0 0 0 #4C493E, 2px -1px 0 #4C493E, -1px 2px 0 #4C493E, 3px 3px 0 #4C493E;
+}
+
+.customHeader {
+    cursor: pointer;
+    text-shadow: -3px 3px 0 #3B3B19, 3px -3px 0 #3B3B19, 3px 3px 0 #3B3B19, -3px -3px 0 #3B3B19;
+    /*font-family: 'Comic Sans MS', sans-serif;*/
+    font-weight: bold;
+    color: #F5E3A7;
+}
+
+.custom-h {
+    height: fit-content;
+}
+
+.custom-w {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+.dropShadow {
+    filter: drop-shadow(0 0 .75rem rgb(39, 3, 10));
+}
+
+.border-webkit{
+    -webkit-text-stroke: 4px #29321F;
+}
+
+
+.animation {
+    transition: right .5s;
+    transition-behavior: normal;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transition-property: right;
+}
+
+.test ul {
+    background-color: #29321F;
+    color: white;
+    width: 150px;
+    border-radius: 6px;
+    border: none;
+}
+.test ul > li:hover{
+    color: #3B3B19;
+    background-color: #8D8759;
+}
+
+.mobileTest ul {
+    background-color: #29321F;
+    color: white;
+    width: 100%;
+    border-radius: 6px;
+
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+    border: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #29321F;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+.custom-scrollbar::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: #E5E7EB; /* Change to your preferred color */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #4B5563; /* Change to your preferred color */
+    border-radius: 10px;
+    border: 3px solid #E5E7EB; /* Change to your preferred color */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #374151; /* Change to your preferred color */
+}
+
+.timer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+
+}
+
+.timer__card {
+    /*position: relative;*/
+    /*display: flex;*/
+    /*flex-direction: column-reverse;*/
+    /*grid-template-columns: 1fr;*/
+    /*place-content: center;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+}
+
+.timer__card-elements {
+    position: relative;
+    height: inherit;
+    width: inherit;
+    border-radius: inherit;
+    overflow: hidden;
+    /*background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1506) 50%, transparent 50%);*/
+    /*transform-style: preserve-3d;*/
+    /*perspective-origin: center top;*/
+}
+
+.timer__card-elements .line {
+    position: absolute;
+    top: 50%;
+    opacity: 0.253;
+    width: 100%;
+    height: .0296rem;
+    background-color: black;
+    z-index: 10;
+}
+
+.timer__card-elements .circle {
+    position: absolute;
+    top: 46%;
+    left: -5%;
+    width: .375rem;
+    height: .375rem;
+    border-radius: 100%;
+    background-color: #000;
+    box-shadow: 70px 0 0px #000;
+}
+
+.line, .circle {
+    display: none !important;
+}
+
+.timer__card-visual {
+    position: relative;
+    width: 4.375rem;
+    height: 4.375rem;
+    /*border-radius: .5rem;*/
+    /*background-color: #000;*/
+    /*box-shadow: 0 5px 0 0px #000;*/
+}
+
+.timer__card-num {
+    /*font-size: 26px;*/
+    /*font-weight: 500;*/
+    color: #FFFFFF;
+    border-radius: .25rem;
+    padding: 11px;
+    padding-top: 0 !important;
+    position: absolute;
+    z-index: 1;
+}
+.timer__card-val {
+    text-transform: uppercase;
+}
+
+.navbar-color {
+    background-color: rgba(33, 37, 41, 0.8);
+}
+
+.bg-custom {
+    background-image: url('/images/about-mob-bg.svg');
+    background-size: 100%;
+}
+.bg-palm {
+    background-image: url('/images/palm.svg');
+    background-size: 100%;
+}
+
+.HeroBg {
+    background-image: url('/images/heroBg.png');
+    /*background-size: 100%;*/
+    background-position: center;
+
+}
+
+@media (min-width: 1024px) {
+    .bg-custom {
+        background-image: url('/images/about-bg.svg');
+    }
+}
+
+.TokenomicsBg {
+    background-image: url('/images/bg (1).svg');
+    /*background-size: 100%;*/
+    background-position: center;
+}
+
+@media (max-width: 768px) {
+    .custom-width {
+        width: fit-content;
+    }
+}
+
+
+
+
+
