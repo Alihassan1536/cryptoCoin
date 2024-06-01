@@ -44,7 +44,7 @@ export const CountdownTimer = ({ targetDate, labels }: CountdownTimerProps) => {
     }, [targetDate]);
 
     return (
-        <div className="timer">
+        <div className="timer max-sm:ga">
             {timeLeft.map((num, index) => (
                 <div key={index} className="timer__card relative flex flex-col-reverse">
                     <div className="timer__card-visual ">

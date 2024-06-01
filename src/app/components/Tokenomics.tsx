@@ -76,7 +76,7 @@ function Tokenomics() {
                     </div>
                     <div>
                         <Image
-                            className="absolute lg:w-[150px] w-36 lg:h-[288px]  lg:left-5 left-0 lg:bottom-[52%] max-sm:-bottom-20"
+                            className="absolute lg:w-[150px] w-28 lg:h-[288px]  lg:left-5 left-0 lg:bottom-[52%] max-sm:-bottom-20"
                             src={TokoBottom} alt="TokoBottom"/>
                     </div>
                 </div>

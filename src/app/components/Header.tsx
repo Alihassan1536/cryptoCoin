@@ -56,7 +56,7 @@ export default function Header() {
                     <div className="flex-1">
                         <Link href="#" className="-m-1.5 p-1.5 flex items-center gap-x-2">
                             <span className="sr-only">Your Company</span>
-                            <Image className="dropShadow" width={65} height={65} src={Logo} alt="Logo"/>
+                            <Image className="md:block hidden dropShadow" width={65} height={65} src={Logo} alt="Logo"/>
                             {/*<h1 className="text-4xl text-white">KAI</h1>*/}
                         </Link>
                     </div>
@@ -117,30 +117,30 @@ export default function Header() {
                 {/*Mobile menu, show/hide based on menu open state.*/}
                 <div className="lg:hidden block" role="dialog" aria-modal="true">
                     <div
-                        className="fixed h-screen inset-y-0 right-0 top-0 z-50 custom-w overflow-y-auto bg-[#29321F] py-5 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 custom-h ">
+                        className="fixed h-screen inset-y-0 right-0 top-0 z-50 custom-w overflow-y-auto bg-[#29321F] py-2 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 custom-h ">
                         <div className="flex items-center justify-between px-6">
                             <Link href="#" className=" -m-1.5 py-2 px-0 flex items-center gap-x-2">
                                 <span className="sr-only">Your Company</span>
-                                <Image className="dropShadow" width={70} height={70} src={Logo} alt="Logo"/>
+                                <Image className="dropShadow" width={55} height={55} src={Logo} alt="Logo"/>
                             </Link>
                             {isMenuOpen ? (
                                 <button type="button" className="-m-2.5 rounded-md p-2.5 text-gray-700"
                                         onClick={() => setIsMenuOpen(false)}>
                                     <span className="sr-only">Close menu</span>
-                                    <IoCloseSharp className="w-14 h-14 text-white"/>
+                                    <IoCloseSharp className="w-8 h-8 text-white"/>
                                 </button>
                             ) : (
                                 <button type="button" className="-m-2.5 rounded-md p-2.5 text-gray-700"
                                         onClick={() => setIsMenuOpen(true)}>
                                     <span className="sr-only">Close menu</span>
-                                    <FaBars className="w-10 h-10 text-white"/>
+                                    <FaBars className="w-8 h-8 text-white"/>
                                 </button>
                             )}
                         </div>
 
 
                         <div
-                            className={`fixed inset-y-0 !max-w-full top-28 right-0 w-full h-screen  z-[777] backdrop-filter backdrop-blur-sm  ${isMenuOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'} `}
+                            className={`fixed inset-y-0 !max-w-full  top-[75px] right-0 w-full h-screen  z-[777] backdrop-filter backdrop-blur-sm  ${isMenuOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'} `}
                             style={{transition: 'opacity 0.2s ease-in-out'}}>
                             <nav id="sidebar"
                                  className={`fixed !max-w-full inset-y-0 lg:top-[69px] z-[777] top-0 2xl:hidden right-0 h-screen flex w-full ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'} flex-col overflow-y-auto bg-[#29321F] pt-6 pb-8 sm:max-w-xs lg:w-80 transform transition-all duration-700`}>

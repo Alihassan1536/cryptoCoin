@@ -28,7 +28,7 @@ const HeroCard = () => {
     return (
         <div className="HeroBg -mt-10 pt-10 bg-no-repeat bg-cover">
             <div className="max-w-7xl relative z-1 mx-auto">
-                <div className="grid grid-cols-1 lg:px-6 px-2 lg:pt-20 lg:pb-9 md:py-32 py-28 relative mt-8">
+                <div className="grid grid-cols-1 lg:px-6 px-2 lg:pt-20 lg:pb-9 md:py-32 py-20 relative mt-8">
                     <div className="md:max-w-[460px] max-w-full mx-auto px-7 bg-[#29321F] py-6 rounded-[32px] border-4 border-[#343E60] relative z-30">
                         <div className="pb-2">
                             <h2 className={`text-lg text-center tracking-widest text-[#FAD5E4] ${robotoCondensed.className}`}>
@@ -68,15 +68,15 @@ const HeroCard = () => {
                             </div>
                         </div>
                         <div className="flex items-center justify-center gap-x-2 mb-3">
-                            <div className="flex items-center justify-center bg-[#F2DB94] gap-x-6 py-1.5 px-8 w-1/3 rounded-full transition-all duration-250 hover:ease-in-out transform hover:scale-105 delay-150">
+                            <div className="flex items-center justify-center bg-[#F2DB94] md:gap-x-6 gap-x-3 py-1.5 px-8 w-1/3 rounded-full transition-all duration-250 hover:ease-in-out transform hover:scale-105 delay-150">
                                 <Image className="w-8 h-8" width={30} height={30} src={ETH} alt="ETH" />
                                 <h2 className={`${robotoCondensed.className} text-[#29321F] font-bold text-base`}>ETH</h2>
                             </div>
-                            <div className="flex items-center justify-center bg-[#94998F] gap-x-6 py-1.5 px-8 w-1/3 rounded-full transition-all duration-250 hover:ease-in-out transform hover:scale-105 delay-150">
+                            <div className="flex items-center justify-center bg-[#94998F] md:gap-x-6 gap-x-3 py-1.5 px-8 w-1/3 rounded-full transition-all duration-250 hover:ease-in-out transform hover:scale-105 delay-150">
                                 <Image className="w-8 h-8" width={40} height={40} src={USD} alt="USDT" />
                                 <h2 className={`${robotoCondensed.className} text-[#550D49] text-base`}>USDT</h2>
                             </div>
-                            <div className="flex items-center justify-center bg-[#94998F] gap-x-6 py-1.5 px-8 w-1/3 rounded-full transition-all duration-250 hover:ease-in-out transform hover:scale-105 delay-150">
+                            <div className="flex items-center justify-center bg-[#94998F] md:gap-x-6 gap-x-3 py-1.5 px-8 w-1/3 rounded-full transition-all duration-250 hover:ease-in-out transform hover:scale-105 delay-150">
                                 <Image className="w-8 h-8" width={40} height={40} src={Card} alt="CARD" />
                                 <h2 className={`${robotoCondensed.className} text-[#550D49] text-base`}>CARD</h2>
                             </div>

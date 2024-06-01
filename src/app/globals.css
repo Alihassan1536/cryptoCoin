@@ -103,9 +103,9 @@
 .timer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
-
+    gap: 22px;
 }
+
 
 .timer__card {
     /*position: relative;*/
@@ -129,7 +129,7 @@
 }
 
 .timer__card-elements .line {
-    position: absolute;
+    /*position: absolute;*/
     top: 50%;
     opacity: 0.253;
     width: 100%;
@@ -211,6 +211,25 @@
 @media (max-width: 768px) {
     .custom-width {
         width: fit-content;
+    }
+    /*.timer {*/
+    /*    gap: 12px;*/
+    /*}*/
+    /*.timer__card-visual {*/
+    /*    position: relative;*/
+    /*    width: 3.375rem;*/
+    /*    height: 3.375rem;*/
+    /*}*/
+}
+
+@media (max-width: 400px) {
+    .timer {
+        gap: 12px;
+    }
+    .timer__card-visual {
+        position: relative;
+        width: 3.375rem;
+        height: 3.375rem;
     }
 }
 
